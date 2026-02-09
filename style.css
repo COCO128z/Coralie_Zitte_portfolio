@@ -21,7 +21,9 @@ body {
 
 .map_image {
   width: 100%;
-  max_height: 400px;
+  max_width : 100%;
+  height: auto;
+  display: block;
   object_fit: cover;
   border_radius: 12px;
   margin_bottom: 50px;
@@ -66,13 +68,13 @@ body {
   font-weight: 700;             /* Bold */
   text-transform: uppercase;    /* Majuscules */
   color: #e8471b;               /* Couleur principale */
-  font-size: 0.95rem;           /* Ajustable */
+  font-size: 1.2rem;           /* Ajustable */
   margin: 0 0 4px 0;            /* Marge sous le titre */
 }
 
 .legend_content p {
   font-weight: 400;             /* Regular / medium */
-  font-size: 0.85rem;           /* Ajustable */
+  font-size: 1rem;           /* Ajustable */
   line-height: 1.4;
   color: #000000;               /* Corps de texte noir */
   margin: 0;                     /* Pas de marge par défaut */
@@ -169,20 +171,33 @@ body {
 
 
 
-/* Responsive */
-@media (max-width: 500px) {
+/* Responsive tablette */
+@media (max-width: 900px) {
   .legend {
-    grid_template_columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
-/* Responsive */
-@media (max-width: 500px) {
+/* Responsive mobile */
+@media (max-width: 700px) {
   .language_choices {
-    flex_direction: column;
+    flex-direction: column;
     gap: 24px;
   }
+
+  .map_title {
+    font-size: 1.6rem;
+  }
+
+  .legend h2 {
+    font-size: 1.2rem;
+  }
+
+  .legend p {
+    font-size: 1rem;
+  }
 }
+
 
 
 
