@@ -68,7 +68,7 @@ body {
 .legend_content h2 {
   font-weight: 700;             /* Bold */
   text-transform: uppercase;    /* Majuscules */
-  color: #e8471b;               /* Couleur principale */
+  color: yellowgreen;               /* Couleur principale */
   font-size: 1.2rem;           /* Ajustable */
   margin: 0 0 4px 0;            /* Marge sous le titre */
 }
