@@ -173,29 +173,37 @@ body {
 
 
 /* Responsive tablette */
-@media (max-width: 300px) {
+@media (max-width: 450px) {
   .legend {
     grid-template-columns: 1fr;
   }
 }
 
 /* Responsive mobile */
-@media (max-width: 300px) {
+@media (max-width: 450px) {
   .language_choices {
     flex-direction: column;
     gap: 24px;
   }
 
+  .map_image{
+    max_width: 450px;
+  }
+
   .map_title {
-    font-size: 8rem;
+    font-size: 3rem;
   }
 
   .legend h2 {
-    font-size: 5rem;
+    font-size: 2.2rem;
   }
 
   .legend p {
-    font-size: 4rem;
+    font-size: 1.8rem;
+  }
+
+  .legend_picto{
+    width: 80px;
   }
 }
 
