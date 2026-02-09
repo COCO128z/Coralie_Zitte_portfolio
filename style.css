@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: "your_typeface_name", sans-serif;
+  background_color: #f9f2e5;
+  color: #000000;
+}
+
+.container {
+  max_width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.map_title {
+  text_align: center;
+  color: #e8471b;
+  font_weight: 700;
+  letter_spacing: 0.08em;
+  margin_bottom: 30px;
+}
+
+.map_image {
+  width: 100%;
+  max_height: 400px;
+  object_fit: cover;
+  border_radius: 12px;
+  margin_bottom: 50px;
+}
+
+.legend {
+  display: grid;
+  grid_template_columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+
+.legend_item {
+  display: flex;                 /* Picto à gauche, texte à droite */
+  align-items: flex-start;       /* Aligne le haut du picto avec le texte */
+  gap: 14px;                     /* Espace entre picto et texte */
+  margin-bottom: 20px;           /* Espacement entre les items */
+}
+
+.legend_picto {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  flex-shrink: 0;               /* Empêche le picto de rétrécir */
+}
+
+.legend_content {
+  display: flex;
+  flex-direction: column;       /* Nom + description empilés verticalement */
+}
+
+.legend_content h2 {
+  font-weight: 700;             /* Bold */
+  text-transform: uppercase;    /* Majuscules */
+  color: #e8471b;               /* Couleur principale */
+  font-size: 0.95rem;           /* Ajustable */
+  margin: 0 0 4px 0;            /* Marge sous le titre */
+}
+
+.legend_content p {
+  font-weight: 400;             /* Regular / medium */
+  font-size: 0.85rem;           /* Ajustable */
+  line-height: 1.4;
+  color: #000000;               /* Corps de texte noir */
+  margin: 0;                     /* Pas de marge par défaut */
+}
+
+
+
+
+.legend_title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e8471b;
+  font-size: 0.95rem;
+  margin-bottom: 4px; /* petit espace entre nom et description */
+}
+
+.legend_description {
+  font-weight: 400;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #000000;
+}
+
+
+/* Responsive */
+@media (max_width: 900px) {
+  .legend {
+    grid_template_columns: 1fr;
+  }
+}
+
+
+
+
+/* Page choix de langue */
+
+.language_container {
+  min_height: 100vh;
+  display: flex;
+  flex_direction: column;
+  align_items: center;
+  justify_content: center;
+  background_color: #f9f2e5;
+  padding: 40px 20px;
+  text_align: center;
+}
+
+.logo {
+  width: 140px;
+  margin_bottom: 30px;
+}
+
+.language_title {
+  color: #e8471b;
+  font_weight: 700;
+  letter_spacing: 0.08em;
+  margin_bottom: 40px;
+}
+
+.language_choices {
+  display: flex;
+  gap: 40px;
+}
+
+.language_card {
+  text_decoration: none;
+  color: #000000;
+  display: flex;
+  flex_direction: column;
+  align_items: center;
+  padding: 20px 30px;
+  border_radius: 14px;
+  transition: transform 0.2s ease;
+}
+
+.language_card:hover {
+  transform: scale(1.05);
+}
+
+.language_flag {
+  width: 60px;
+  margin_bottom: 12px;
+}
+
+.language_name {
+  font_weight: 700;
+  letter_spacing: 0.06em;
+}
+
+/* Responsive */
+@media (max_width: 700px) {
+  .language_choices {
+    flex_direction: column;
+    gap: 24px;
+  }
+}
+
