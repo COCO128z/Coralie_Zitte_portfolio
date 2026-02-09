@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  overflow-x: hidden;
   font-family: "your_typeface_name", sans-serif;
   background_color: #f9f2e5;
   color: #000000;
@@ -179,7 +180,7 @@ body {
 }
 
 /* Responsive mobile */
-@media (max-width: 700px) {
+@media (max-width: 300px) {
   .language_choices {
     flex-direction: column;
     gap: 24px;
